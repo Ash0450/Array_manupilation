@@ -46,3 +46,8 @@ const seconf= bee => {
 console.log(seconf(bee))
     
     
+let y= [1,2,4]
+    let z = [3,5,6]
+    let jo = y.concat(z)
+    let sd = jo.sort((a,b) => b-a)
+    console.log (sd)
