@@ -1,36 +1,26 @@
-Interview questions:
+//Reverse String
+let a ='hello'
+let reversed = a.split('').reverse().join('')
+console.log (reversed)
 
-Deep Copy and shallow copy
-How object.freeze work if we hve const why we want to use object.freeze
-State management
-Write syntax of deep copy
-Lexical scope
-Other way to describe object in javascript
-What is spread operator
+//Palindrome Check
+const pala = 'racecar'
+const palaCheck= pala === pala.split('').reverse().join('')
+console.log (palaCheck)
 
-How to detect compulation in angular how it works
-What is onpush in angular
-Data binding
-ngfor in div tag write it
-Ngif
-What is view child
-Route guard
-How to handle multiple promises
-Auth guards
-Promises
-Forms in angular
-How to dependency injector
-What the features of angular you have used
-How to transfer the data between component
+//Vowel Count
+let jh = 'hello'
+let hj = jh =>{
+    let vowel = ['a','e','i','o','u']
+    return [...jh].filter(char=> vowel.includes(char.toLowerCase())).length
+}
+console.log(hj(jh))
 
+//Capital the 1st character of each word
+let ghr = 'hello world'
+let capital = ghr =>
+    ghr.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
 
-Node
-What is middle ware in nodejs
-What is macro and micro state in nide
-How to handle error in node
-What is nodejs how it works
-Async and sync function in nodejs
+console.log (capital(ghr))
 
-Coding question 
-Merge two array into 1
-input = [1,0,2,0,3] move all zero at the end
+const str = "hello world";
